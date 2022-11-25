@@ -1,17 +1,17 @@
 import bg from '../assets/bg.png';
 import chef from '../assets/chef.png';
 import G from '../assets/G.png';
-import gallery01 from '../assets/gallery01.png';
-import gallery02 from '../assets/gallery02.png';
-import gallery03 from '../assets/gallery03.png';
-import gallery04 from '../assets/gallery04.png';
+import gallery01 from '../assets/Galeria1.jpg';
+import gallery02 from '../assets/Galeria2.jpg';
+import gallery03 from '../assets/Galeria3.jpg';
+import gallery04 from '../assets/Galeria4.jpg';
 import knife from '../assets/knife.png';
 import logo from '../assets/logo.png';
 import menu from '../assets/menu.png';
 import overlaybg from '../assets/overlaybg.png';
 import spoon from '../assets/spoon.svg';
 import welcome from '../assets/welcome.png';
-import findus from '../assets/findus.png';
+import findus from '../assets/findus.jpg';
 import laurels from '../assets/laurels.png';
 import award01 from '../assets/award01.png';
 import award02 from '../assets/award02.png';
@@ -43,5 +43,5 @@ export default {
   award05,
   sign,
   quote,
-  gericht,
+  gericht
 };

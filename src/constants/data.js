@@ -1,5 +1,24 @@
 import images from './images';
 
+const gallery = [
+  {
+    image: images.gallery01,
+    link: "https://www.instagram.com/p/B6lftofB5jc/"
+  },
+  {
+    image: images.gallery02,
+    link: "https://www.instagram.com/p/CYUqIM0qA4-/"
+  },
+  {
+    image: images.gallery03,
+    link: "https://www.instagram.com/p/CbyjIpoh7Xk/"
+  },
+  {
+    image: images.gallery04,
+    link: "https://www.instagram.com/p/CafvzIAt-0I/"
+  }
+]
+
 const wines = [
   {
     title: 'Chapel Hill Shiraz',
@@ -79,4 +98,4 @@ const awards = [
   },
 ];
 
-export default { wines, cocktails, awards };
+export default { wines, cocktails, awards, gallery };

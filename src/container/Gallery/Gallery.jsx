@@ -2,7 +2,7 @@ import React from 'react';
 import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 
 import { SubHeading } from '../../components';
-import { images } from '../../constants';
+import { data } from '../../constants';
 import './Gallery.css';
 
 const Gallery = () => {
@@ -22,16 +22,20 @@ const Gallery = () => {
     <div className="app__gallery flex__center">
       <div className="app__gallery-content">
         <SubHeading title="Instagram" />
-        <h1 className="headtext__cormorant">Photo Gallery</h1>
-        <p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
-        <button type="button" className="custom__button">View More</button>
+        <h1 className="headtext__cormorant">Galería de Fotos</h1>
+        <p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}>Aquí Tienes Las Hamburguesas Y Menús Más Deseados Por Nuestros Clientes</p>
+        <a href="https://www.instagram.com/vanburga/" target="_blank">
+          <button type="button" className="custom__button">Ver más</button>
+        </a>
       </div>
       <div className="app__gallery-images">
         <div className="app__gallery-images_container" ref={scrollRef}>
-          {[images.gallery01, images.gallery02, images.gallery03, images.gallery04].map((image, index) => (
+          {data.gallery.map((item, index) => (
             <div className="app__gallery-images_card flex__center" key={`gallery_image-${index + 1}`}>
-              <img src={image} alt="gallery_image" />
-              <BsInstagram className="gallery__image-icon" />
+              <img src={item.image} alt="gallery_image" />
+              <a className="gallery__image-icon" style={{ marginRight: "1.5rem" }} href={item.link} target="_blank">
+                <BsInstagram className="gallery__image-icon" />
+              </a>
             </div>
           ))}
         </div>
